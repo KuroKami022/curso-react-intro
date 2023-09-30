@@ -1,14 +1,80 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# To Do List in React.js
 
-¡Hola, Platzinauta!
+This repository contains a simple To Do List application built with React.js.
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+## Design
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+![Design 1](/src/assets/images/design_1.png)
+![Design 2](/src/assets/images/design_2.png)
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+## Live Deployment
 
-## Getting Started with Create React App
+The repository is currently deployed and accessible [here](htts://KuroKami022.github.io/curso-react-intro).
+
+## Features
+
+### Task Management
+
+- Users can create and delete tasks.
+- Each task includes a title, due date, repeat option, notes, importance and status (e.g., completed or in progress).
+- Tasks can be prioritized.
+
+### List Management
+
+- Users can create, update, and delete lists.
+- Lists are groups of related tasks that can be categorized by a specific theme or purpose.
+- Users can add tasks to a particular list.
+- Each list includes a title, a description, and their group of tasks.
+- Users can view all the tasks associated with a specific list.
+
+### Home Page
+
+- The home page displays an overview of the user tasks and lists.
+- Displays the today's tasks, which are the tasks that are due today or repeat every day.
+- Also displays the lists, allowing users to have a comprehensive view of their tasks and lists in one place.
+- Users can easily see the tasks that require immediate attention and are relevant for the current day.
+- This feature provides a quick overview of the tasks that need to be completed or worked on without navigating to individual lists.
+
+### Tasks Page
+
+- The tasks page displays all tasks, providing an overview of all created tasks.
+- Users can see the title, due date, notes, importance, and status of each task.
+- This page allows users to manage and update tasks efficiently.
+
+### Important Page
+
+- The important page displays all tasks that are marked as important.
+- Users can easily identify and focus on the tasks that require special attention or priority.
+- This feature helps users manage their important tasks effectively.
+
+### Lists Page
+
+- The lists page displays all created lists.
+- Users can view the title and description of each list.
+- This page provides a convenient way to access and navigate through different lists.
+- Users can select a specific list to view all the tasks associated with it.
+
+## Requirements
+
+- Node.js 16+
+- NPM
+
+## Getting Started
+
+1. Clone the repository
+2. Install the dependencies
+
+```
+npm install
+```
+
+3. Start the application
+
+```
+npm start
+```
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,6 +89,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -73,3 +144,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## License
+
+This project is licensed under the MIT License.
