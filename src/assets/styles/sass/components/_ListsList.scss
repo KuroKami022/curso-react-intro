@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+.list-container {
+  margin-bottom: 50px;
+  color: $white;
+
+  .title {
+    font-size: $lg;
+  }
+}
+
+.lists-container-lists-page {
+  .list-list {
+    div {
+      width: 100%;
+      .list-item {
+        align-self: center;
+        height: 150px;
+        width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as *;
+
+.side-panel {
+  position: fixed;
+  right: -10px;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background-color: $secondary-color;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  color: $white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  z-index: 100002;
+
+  label {
+    color: $very-light-grey;
+    font-size: $md;
+  }
+  .input {
+    background-color: $secondary-color-hover;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .input:focus {
+    outline: none;
+  }
+  textarea.notes {
+    height: 150px;
+  }
+  .dropdown {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+    border-top: solid 1px $dark-grey;
+    bottom: 0;
+    button.save {
+      position: absolute;
+      bottom: 15px;
+      left: 30px;
+      text-transform: uppercase;
+      background-color: $color-alpha;
+      border-radius: 10px;
+      color: $white;
+      transition: transform 0.2s;
+    }
+    button.delete {
+      position: absolute;
+      bottom: 15px;
+      right: 30px;
+      text-transform: uppercase;
+      background-color: $ajax-red;
+      border-radius: 10px;
+      color: $white;
+      transition: transform 0.2s;
+    }
+  }
+}
+.side-panel--active {
+  transform: none;
+}

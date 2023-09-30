@@ -1,0 +1,192 @@
+@use '../abstracts/variables' as *;
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.add-modal {
+  &__header {
+    border-radius: 0;
+    color: $white;
+    background-color: $secondary-color;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &__body {
+    background-color: $primary-color;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    label {
+      color: $very-light-grey;
+    }
+
+    .input,
+    .select {
+      background-color: $dark-grey;
+      color: $white;
+      font-size: $sm;
+      letter-spacing: 1.3px;
+      height: 45px;
+    }
+    .radio-button-container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .radio-button {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      &__input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      &__label {
+        display: inline-block;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 15px;
+        color: #f2f2f2;
+        font-weight: 600;
+        cursor: pointer;
+        // text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+      &__custom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #555;
+        transition: all 0.3s ease;
+      }
+      &__input:checked + .radio-button__label .radio-button__custom {
+        background-color: #4c8bf5;
+        border-color: transparent;
+        transform: scale(0.8);
+        // box-shadow: 0 0 20px #4c8bf580;
+      }
+      .radio-button__input:checked + .radio-button__label {
+        color: #4c8bf5;
+      }
+      &__label:hover .radio-button__custom {
+        transform: scale(1.2);
+        border-color: #4c8bf5;
+        // box-shadow: 0 0 20px #4c8bf580;
+      }
+    }
+
+    .input#notes,
+    .input#description {
+      height: 100px;
+    }
+
+    .msg-alert {
+      font-size: $sm;
+      font-weight: bold;
+      margin-left: 20px;
+      color: $alert-red;
+    }
+    .alert {
+      color: $alert-red;
+    }
+    .border-alert {
+      border: solid 0.5px $alert-red;
+    }
+    // Place Holder CSS
+    ::-webkit-input-placeholder {
+      opacity: 0.5;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :-moz-placeholder {
+      opacity: 0.5;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    ::-moz-placeholder {
+      opacity: 0.5;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :-ms-input-placeholder {
+      opacity: 0.5;
+      -ms-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    /* Place Holder CSS for Focus */
+    :hover::-webkit-input-placeholder {
+      opacity: 0.75;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :hover:-moz-placeholder {
+      opacity: 0.75;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :hover::-moz-placeholder {
+      opacity: 0.75;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :hover:-ms-input-placeholder {
+      opacity: 0.75;
+      -ms-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+
+    /* Place Holder CSS for Focus */
+    :focus::-webkit-input-placeholder {
+      opacity: 0;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :focus:-moz-placeholder {
+      opacity: 0;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :focus::-moz-placeholder {
+      opacity: 0;
+      -moz-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+    :focus:-ms-input-placeholder {
+      opacity: 0;
+      -ms-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out;
+    }
+
+    button:last-child {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      text-transform: uppercase;
+      background-color: $color-alpha;
+      color: $white;
+      transition: transform 0.2s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    button:last-child:hover {
+      background-color: $color-beta;
+      transform: scale(1.02);
+    }
+  }
+  &__footer {
+    background-color: $secondary-color;
+  }
+}
+
+.hide {
+  display: none;
+}

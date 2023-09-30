@@ -1,0 +1,12 @@
+//Base
+@use 'base';
+//Components
+@use 'components';
+//Layout
+@use 'layout';
+// //Pages
+@use 'pages';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+.task-list-container {
+  color: $white;
+  .title {
+    font-size: $lg;
+  }
+
+  .subtitle {
+    font-size: $md;
+    margin-left: 40px;
+    .icon {
+      cursor: pointer;
+      margin: auto 0;
+      transition: transform 0.1s;
+    }
+    .icon--rotate {
+      transform: rotate(-180deg);
+    }
+  }
+}

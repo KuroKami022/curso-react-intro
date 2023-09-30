@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+
+.search-container {
+  color: $dark-grey;
+
+  .icon-container {
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    .title {
+      font-size: $lg;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    .icon-container {
+      top: 10px;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $secondary-color-hover;
+    font-size: 12px;
+  }
+  .footer:hover {
+    color: $color-alpha;
+  }
+}
